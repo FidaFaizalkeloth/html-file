@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  const text = "fida@gmail.com"
+        // console.log(text.charAt(3));
+        //  console.log(text.charCodeAt(1));
+        //  console.log(text.indexOf("a"));
+        // console.log(text.slice(2));
+        //  console.log(text.split("@"));
+
+
+        // hw
+
+        let email = 'farookclg@gmail.com';
+        let [x, y] = email.split('@');
+        let firstPart = x.slice(0, 3);
+        let endPart = x.slice(-1);
+
+        let hiddenPart = '*'.repeat(x.length - 2);
+        let hiddenEmail = firstPart + hiddenPart + endPart + '@' + y;
+
+        console.log(hiddenEmail);
+
+    </script>
+</body>
+
+</html>
